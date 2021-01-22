@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="255.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.Controller">
+    <VBox alignment="CENTER" layoutX="41.0" layoutY="43.0" prefHeight="223.0" prefWidth="357.0" spacing="30.0">
+        <HBox alignment="CENTER" spacing="20.0">
+            <TextField fx:id="textFieldFrom" promptText="FROM" />
+            <ComboBox fx:id="comboBoxFrom" prefWidth="150.0" promptText="Choose">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="AED - United Arab Emirates dirham" />
+                        <String fx:value="AFN - Afghan afghani" />
+                        <String fx:value="ALL - Albanian lek" />
+                        <String fx:value="AMD - Armenian dram" />
+                        <String fx:value="ANG - Netherlands Antillean guilder" />
+                        <String fx:value="AOA - Angolan kwanza" />
+                        <String fx:value="ARS - Argentine peso" />
+                        <String fx:value="AUD - Australian dollar" />
+                        <String fx:value="AWG - Aruban florin" />
+                        <String fx:value="AZN - Azerbaijani manat" />
+
+                        <String fx:value="BAM - Bosnia and Herzegovina convertible mark" />
+                        <String fx:value="BBD - Barbadian dollar" />
+                        <String fx:value="BDT - Bangladeshi taka" />
+                        <String fx:value="BGN - Bulgarian lev" />
+                        <String fx:value="BHD - Bahraini dinar" />
+                        <String fx:value="BIF - Burundian franc" />
+                        <String fx:value="BND - Brunei dollar" />
+                        <String fx:value="BOB - Bolivian boliviano" />
+                        <String fx:value="BRL - Brazilian real" />
+                        <String fx:value="BSD - Bahamian dollar" />
+
+                        <String fx:value="BWP - Botswana pula" />
+                        <String fx:value="BYN - Belarusian ruble" />
+                        <String fx:value="BZD - Belize dollar" />
+                        <String fx:value="CAD - Canadian dollar" />
+                        <String fx:value="CDF - Congolese franc" />
+                        <String fx:value="CHF - Swiss franc" />
+                        <String fx:value="CLP - Chilean peso" />
+                        <String fx:value="CNY - Renminbi" />
+                        <String fx:value="COP - Colombian peso" />
+                        <String fx:value="CRC - Costa Rican colón" />
+
+                        <String fx:value="CUP - Cuban peso" />
+                        <String fx:value="CVE - Cape Verdean escudo" />
+                        <String fx:value="CJK - Czech koruna" />
+                        <String fx:value="DJF - Djiboutian franc" />
+                        <String fx:value="DKK - Danish krone" />
+                        <String fx:value="DOP - Dominican peso" />
+                        <String fx:value="DZD - Algerian dinar" />
+                        <String fx:value="EGP - Egyptian pound" />
+                        <String fx:value="ERN - Eritrean nakfa" />
+                        <String fx:value="ETB - Ethiopian birr" />
+
+                        <String fx:value="EUR - Euro" />
+                        <String fx:value="FJD - Fijian dollar" />
+                        <String fx:value="GBP - Pound sterling" />
+                        <String fx:value="GEL - Georgian lari" />
+                        <String fx:value="GHS - Ghanaian cedi" />
+                        <String fx:value="GIP - Gibraltar pound" />
+                        <String fx:value="GMD - Gambian dalasi" />
+                        <String fx:value="GNF - Guinean franc" />
+                        <String fx:value="GTQ - Guatemalan quetzal" />
+                        <String fx:value="GYD - Guyanese dollar" />
+
+                        <String fx:value="HKD - Hong Kong dollar" />
+                        <String fx:value="HNL - Honduran lempira" />
+                        <String fx:value="HRK - Croatian kuna" />
+                        <String fx:value="HTG - Haitian gourde" />
+                        <String fx:value="HUF - Hungarian forint" />
+                        <String fx:value="IDR - Indonesian rupiah" />
+                        <String fx:value="ILS - Israeli new shekel" />
+                        <String fx:value="INR - Indian rupee" />
+                        <String fx:value="IQD - Iraqi dinar" />
+                        <String fx:value="IRR - Iranian rial" />
+
+                        <String fx:value="ISK - Icelandic króna" />
+                        <String fx:value="JMD - Jamaican dollar" />
+                        <String fx:value="JOD - Jordanian dinar" />
+                        <String fx:value="JPY - Japanese yen" />
+                        <String fx:value="KES - Kenyan shilling" />
+                        <String fx:value="KGS - Kyrgyzstani som" />
+                        <String fx:value="KHR - Cambodian riel" />
+                        <String fx:value="KMF - Comorian franc" />
+                        <String fx:value="KRW - South Korean won" />
+                        <String fx:value="KWD - Kuwaiti dinar" />
+
+                        <String fx:value="KZT - Kazakhstani tenge" />
+                        <String fx:value="LAK - Lao kip" />
+                        <String fx:value="LBP - Lebanese pound" />
+                        <String fx:value="LKR - Sri Lankan rupee" />
+                        <String fx:value="LRD - Liberian dollar" />
+                        <String fx:value="LSL - Lesotho loti" />
+                        <String fx:value="LYD - Libyan dinar" />
+                        <String fx:value="MAD - Moroccan dirham" />
+                        <String fx:value="MDL - Moldovan leu" />
+                        <String fx:value="MGA - Malagasy ariary" />
+
+                        <String fx:value="MKD - Macedonian denar" />
+                        <String fx:value="MMK - Burmese kyat" />
+                        <String fx:value="MNT - Mongolian tögrög" />
+                        <String fx:value="MOP - Macanese pataca" />
+                        <String fx:value="MRU - Mauritanian ouguiya" />
+                        <String fx:value="MUR - Mauritian rupee" />
+                        <String fx:value="MVR - Maldivian rufiyaa" />
+                        <String fx:value="MWK - Malawian kwacha" />
+                        <String fx:value="MXN - Mexican peso" />
+                        <String fx:value="MYR - Malaysian ringgit" />
+
+                        <String fx:value="MZN - Mozambican metical" />
+                        <String fx:value="NAD - Namibian dollar" />
+                        <String fx:value="NGN - Nigerian naira" />
+                        <String fx:value="NIO - Nicaraguan córdoba" />
+                        <String fx:value="NOK - Norwegian krone" />
+                        <String fx:value="NPR - Nepalese rupee" />
+                        <String fx:value="NZD - New Zealand dollar" />
+                        <String fx:value="OMR - Omani rial" />
+                        <String fx:value="PAB - Panamanian balboa" />
+                        <String fx:value="PEN - Peruvian sol" />
+
+                        <String fx:value="PGK - Papua New Guinean kina" />
+                        <String fx:value="PHP - Philippine peso" />
+                        <String fx:value="PKR - Pakistani rupee" />
+                        <String fx:value="PLN - Polish złoty" />
+                        <String fx:value="PYG - Paraguayan guaraní" />
+                        <String fx:value="QAR - Qatari riyal" />
+                        <String fx:value="RON - Romanian leu" />
+                        <String fx:value="RSD - Serbian dinar" />
+                        <String fx:value="RUB - Russian ruble" />
+                        <String fx:value="RWF - Rwandan franc" />
+
+                        <String fx:value="SAR - Saudi riyal" />
+                        <String fx:value="SBD - Solomon Islands dollar" />
+                        <String fx:value="SCR - Seychellois rupee" />
+                        <String fx:value="SDG - Sudanese pound" />
+                        <String fx:value="SEK - Swedish krona" />
+                        <String fx:value="SGD - Singapore dollar" />
+                        <String fx:value="SLL - Sierra Leonean leone" />
+                        <String fx:value="SOS - Somali shilling" />
+                        <String fx:value="SRD - Surinamese dollar" />
+                        <String fx:value="SSP - South Sudanese pound" />
+
+                        <String fx:value="STN - São Tomé and Príncipe dobra" />
+                        <String fx:value="SVC - Salvadoran colón" />
+                        <String fx:value="SYP - Syrian pound" />
+                        <String fx:value="SZL - Swazi lilangeni" />
+                        <String fx:value="THB - Thai baht" />
+                        <String fx:value="TJS - Tajikistani somoni" />
+                        <String fx:value="TMT - Turkmenistan manat" />
+                        <String fx:value="TND - Tunisian dinar" />
+                        <String fx:value="TOP - Tongan paʻanga" />
+                        <String fx:value="TRY - Turkish lira" />
+
+                        <String fx:value="TTD - Trinidad and Tobago dollar" />
+                        <String fx:value="TWD - New Taiwan dollar" />
+                        <String fx:value="TZS - Tanzanian shilling" />
+                        <String fx:value="UAH - Ukrainian hryvnia" />
+                        <String fx:value="UGX - Ugandan shilling" />
+                        <String fx:value="USD - United States dollar" />
+                        <String fx:value="UYU - Uruguayan peso" />
+                        <String fx:value="UZS - Uzbekistani soʻm" />
+                        <String fx:value="VES - Venezuelan bolívar" />
+                        <String fx:value="VND - Vietnamese đồng" />
+
+                        <String fx:value="VUV - Vanuatu vatu" />
+                        <String fx:value="WST - Samoan tālā" />
+                        <String fx:value="XAF - Central African CFA franc" />
+                        <String fx:value="XCD - Eastern Caribbean dollar" />
+                        <String fx:value="XDR - Special drawing rights" />
+                        <String fx:value="XOF - West African CFA franc" />
+                        <String fx:value="XPF - CFP franc" />
+                        <String fx:value="YER - Yemeni rial" />
+                        <String fx:value="ZAR - South African rand" />
+                        <String fx:value="ZMW - Zambian kwacha" />
+
+                        <String fx:value="ZWL - Zimbabwean dollar" />
+
+                    </FXCollections>
+                </items>
+            </ComboBox>
+        </HBox>
+        <ImageView fitHeight="50.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" rotate="270.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5">
+            <Image url="@images/arrow.png" />
+        </ImageView>
+
+
+        <HBox alignment="CENTER" spacing="20.0">
+            <TextField fx:id="textFieldTo" promptText="TO" />
+            <ComboBox fx:id="comboBoxTo" prefWidth="150.0" promptText="Choose">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="AED - United Arab Emirates dirham" />
+                        <String fx:value="AFN - Afghan afghani" />
+                        <String fx:value="ALL - Albanian lek" />
+                        <String fx:value="AMD - Armenian dram" />
+                        <String fx:value="ANG - Netherlands Antillean guilder" />
+                        <String fx:value="AOA - Angolan kwanza" />
+                        <String fx:value="ARS - Argentine peso" />
+                        <String fx:value="AUD - Australian dollar" />
+                        <String fx:value="AWG - Aruban florin" />
+                        <String fx:value="AZN - Azerbaijani manat" />
+
+                        <String fx:value="BAM - Bosnia and Herzegovina convertible mark" />
+                        <String fx:value="BBD - Barbadian dollar" />
+                        <String fx:value="BDT - Bangladeshi taka" />
+                        <String fx:value="BGN - Bulgarian lev" />
+                        <String fx:value="BHD - Bahraini dinar" />
+                        <String fx:value="BIF - Burundian franc" />
+                        <String fx:value="BND - Brunei dollar" />
+                        <String fx:value="BOB - Bolivian boliviano" />
+                        <String fx:value="BRL - Brazilian real" />
+                        <String fx:value="BSD - Bahamian dollar" />
+
+                        <String fx:value="BWP - Botswana pula" />
+                        <String fx:value="BYN - Belarusian ruble" />
+                        <String fx:value="BZD - Belize dollar" />
+                        <String fx:value="CAD - Canadian dollar" />
+                        <String fx:value="CDF - Congolese franc" />
+                        <String fx:value="CHF - Swiss franc" />
+                        <String fx:value="CLP - Chilean peso" />
+                        <String fx:value="CNY - Renminbi" />
+                        <String fx:value="COP - Colombian peso" />
+                        <String fx:value="CRC - Costa Rican colón" />
+
+                        <String fx:value="CUP - Cuban peso" />
+                        <String fx:value="CVE - Cape Verdean escudo" />
+                        <String fx:value="CJK - Czech koruna" />
+                        <String fx:value="DJF - Djiboutian franc" />
+                        <String fx:value="DKK - Danish krone" />
+                        <String fx:value="DOP - Dominican peso" />
+                        <String fx:value="DZD - Algerian dinar" />
+                        <String fx:value="EGP - Egyptian pound" />
+                        <String fx:value="ERN - Eritrean nakfa" />
+                        <String fx:value="ETB - Ethiopian birr" />
+
+                        <String fx:value="EUR - Euro" />
+                        <String fx:value="FJD - Fijian dollar" />
+                        <String fx:value="GBP - Pound sterling" />
+                        <String fx:value="GEL - Georgian lari" />
+                        <String fx:value="GHS - Ghanaian cedi" />
+                        <String fx:value="GIP - Gibraltar pound" />
+                        <String fx:value="GMD - Gambian dalasi" />
+                        <String fx:value="GNF - Guinean franc" />
+                        <String fx:value="GTQ - Guatemalan quetzal" />
+                        <String fx:value="GYD - Guyanese dollar" />
+
+                        <String fx:value="HKD - Hong Kong dollar" />
+                        <String fx:value="HNL - Honduran lempira" />
+                        <String fx:value="HRK - Croatian kuna" />
+                        <String fx:value="HTG - Haitian gourde" />
+                        <String fx:value="HUF - Hungarian forint" />
+                        <String fx:value="IDR - Indonesian rupiah" />
+                        <String fx:value="ILS - Israeli new shekel" />
+                        <String fx:value="INR - Indian rupee" />
+                        <String fx:value="IQD - Iraqi dinar" />
+                        <String fx:value="IRR - Iranian rial" />
+
+                        <String fx:value="ISK - Icelandic króna" />
+                        <String fx:value="JMD - Jamaican dollar" />
+                        <String fx:value="JOD - Jordanian dinar" />
+                        <String fx:value="JPY - Japanese yen" />
+                        <String fx:value="KES - Kenyan shilling" />
+                        <String fx:value="KGS - Kyrgyzstani som" />
+                        <String fx:value="KHR - Cambodian riel" />
+                        <String fx:value="KMF - Comorian franc" />
+                        <String fx:value="KRW - South Korean won" />
+                        <String fx:value="KWD - Kuwaiti dinar" />
+
+                        <String fx:value="KZT - Kazakhstani tenge" />
+                        <String fx:value="LAK - Lao kip" />
+                        <String fx:value="LBP - Lebanese pound" />
+                        <String fx:value="LKR - Sri Lankan rupee" />
+                        <String fx:value="LRD - Liberian dollar" />
+                        <String fx:value="LSL - Lesotho loti" />
+                        <String fx:value="LYD - Libyan dinar" />
+                        <String fx:value="MAD - Moroccan dirham" />
+                        <String fx:value="MDL - Moldovan leu" />
+                        <String fx:value="MGA - Malagasy ariary" />
+
+                        <String fx:value="MKD - Macedonian denar" />
+                        <String fx:value="MMK - Burmese kyat" />
+                        <String fx:value="MNT - Mongolian tögrög" />
+                        <String fx:value="MOP - Macanese pataca" />
+                        <String fx:value="MRU - Mauritanian ouguiya" />
+                        <String fx:value="MUR - Mauritian rupee" />
+                        <String fx:value="MVR - Maldivian rufiyaa" />
+                        <String fx:value="MWK - Malawian kwacha" />
+                        <String fx:value="MXN - Mexican peso" />
+                        <String fx:value="MYR - Malaysian ringgit" />
+
+                        <String fx:value="MZN - Mozambican metical" />
+                        <String fx:value="NAD - Namibian dollar" />
+                        <String fx:value="NGN - Nigerian naira" />
+                        <String fx:value="NIO - Nicaraguan córdoba" />
+                        <String fx:value="NOK - Norwegian krone" />
+                        <String fx:value="NPR - Nepalese rupee" />
+                        <String fx:value="NZD - New Zealand dollar" />
+                        <String fx:value="OMR - Omani rial" />
+                        <String fx:value="PAB - Panamanian balboa" />
+                        <String fx:value="PEN - Peruvian sol" />
+
+                        <String fx:value="PGK - Papua New Guinean kina" />
+                        <String fx:value="PHP - Philippine peso" />
+                        <String fx:value="PKR - Pakistani rupee" />
+                        <String fx:value="PLN - Polish złoty" />
+                        <String fx:value="PYG - Paraguayan guaraní" />
+                        <String fx:value="QAR - Qatari riyal" />
+                        <String fx:value="RON - Romanian leu" />
+                        <String fx:value="RSD - Serbian dinar" />
+                        <String fx:value="RUB - Russian ruble" />
+                        <String fx:value="RWF - Rwandan franc" />
+
+                        <String fx:value="SAR - Saudi riyal" />
+                        <String fx:value="SBD - Solomon Islands dollar" />
+                        <String fx:value="SCR - Seychellois rupee" />
+                        <String fx:value="SDG - Sudanese pound" />
+                        <String fx:value="SEK - Swedish krona" />
+                        <String fx:value="SGD - Singapore dollar" />
+                        <String fx:value="SLL - Sierra Leonean leone" />
+                        <String fx:value="SOS - Somali shilling" />
+                        <String fx:value="SRD - Surinamese dollar" />
+                        <String fx:value="SSP - South Sudanese pound" />
+
+                        <String fx:value="STN - São Tomé and Príncipe dobra" />
+                        <String fx:value="SVC - Salvadoran colón" />
+                        <String fx:value="SYP - Syrian pound" />
+                        <String fx:value="SZL - Swazi lilangeni" />
+                        <String fx:value="THB - Thai baht" />
+                        <String fx:value="TJS - Tajikistani somoni" />
+                        <String fx:value="TMT - Turkmenistan manat" />
+                        <String fx:value="TND - Tunisian dinar" />
+                        <String fx:value="TOP - Tongan paʻanga" />
+                        <String fx:value="TRY - Turkish lira" />
+
+                        <String fx:value="TTD - Trinidad and Tobago dollar" />
+                        <String fx:value="TWD - New Taiwan dollar" />
+                        <String fx:value="TZS - Tanzanian shilling" />
+                        <String fx:value="UAH - Ukrainian hryvnia" />
+                        <String fx:value="UGX - Ugandan shilling" />
+                        <String fx:value="USD - United States dollar" />
+                        <String fx:value="UYU - Uruguayan peso" />
+                        <String fx:value="UZS - Uzbekistani soʻm" />
+                        <String fx:value="VES - Venezuelan bolívar" />
+                        <String fx:value="VND - Vietnamese đồng" />
+
+                        <String fx:value="VUV - Vanuatu vatu" />
+                        <String fx:value="WST - Samoan tālā" />
+                        <String fx:value="XAF - Central African CFA franc" />
+                        <String fx:value="XCD - Eastern Caribbean dollar" />
+                        <String fx:value="XDR - Special drawing rights" />
+                        <String fx:value="XOF - West African CFA franc" />
+                        <String fx:value="XPF - CFP franc" />
+                        <String fx:value="YER - Yemeni rial" />
+                        <String fx:value="ZAR - South African rand" />
+                        <String fx:value="ZMW - Zambian kwacha" />
+
+                        <String fx:value="ZWL - Zimbabwean dollar" />
+
+                    </FXCollections>
+                </items>
+            </ComboBox>
+        </HBox>
+        <Button fx:id="buttonConvert" mnemonicParsing="false" onAction="#convert" prefHeight="0.0" prefWidth="72.0" text="Convert" />
+    </VBox>
+   <Label fx:id="labelDate" layoutX="317.0" layoutY="256.0" />
+</AnchorPane>
